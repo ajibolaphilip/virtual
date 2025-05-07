@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light mode colors */
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 47 100% 50%;
+  --primary-dark: 47 100% 45%;
+  --primary-foreground: 240 10% 3.9%;
+  --secondary: 240 4.8% 15%; /* Dark gray with slight blue tint */
+  --secondary-foreground: 240 10% 3.9%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 10% 3.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --info: 199 89% 48%;
+  --danger: 0 84% 60%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 47 100% 50%;
+  --primary-dark: 47 100% 45%;
+  --primary-foreground: 240 10% 3.9%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.bg-dark {
+  background-color: #121212;
+}
+
+.bg-dark-lighter {
+  background-color: #1e1e1e;
+}
+
+.text-success {
+  color: hsl(var(--success));
+}
+
+.text-warning {
+  color: hsl(var(--warning));
+}
+
+.text-info {
+  color: hsl(var(--info));
+}
+
+.text-danger {
+  color: hsl(var(--danger));
+}
+
+.bg-success {
+  background-color: hsl(var(--success));
+}
+
+.bg-warning {
+  background-color: hsl(var(--warning));
+}
+
+.bg-info {
+  background-color: hsl(var(--info));
+}
+
+.bg-danger {
+  background-color: hsl(var(--danger));
+}
+
+/* Gold gradient text */
+.text-gradient {
+  background: linear-gradient(to right, #f8d353, #fcc419);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold gradient button */
+.btn-gradient {
+  background: linear-gradient(to right, #f8d353, #fcc419);
+  color: #121212;
+  font-weight: 500;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #f8d353, #fcc419);
+  opacity: 0.9;
+}
